@@ -7,7 +7,8 @@
 </head>
 <body>
 <!--Para el crear-->
-<div>
+<div class="row w-75 m-auto">
+<div class="col-12 col-sm-3 container p-5">
     <h4>Crea Archivo</h4>
     <form action="http://localhost:3000/crear">
         <div>
@@ -16,12 +17,30 @@
         </div>
         <div>
             <label> Crear Archivo:</label>
-            <textarea name ="contenido" id = "contenido"></textarea>
+            <textarea name ="contenido" id = "contenido" class = "form-control" cols></textarea>
         </div>
         <button type="sumbit">Crear</button>
 
     </form>
 </div>
     
+<!--Para Leer-->
+<div class "col-12 col-sm-3 container p-5">
+      <h4>Leer Archivo</h4>
+      <form action ="http://localhost:3000/leer">
+        <div class="form-group"´>
+            <label>Nombre Archivo a leer: </label>
+            <input name="nombreArchivo" id="nombreArchivo" class = "form-control">
+        </div>
+        <button type="sumbit"class="btn btn-info">Leer</button>
+    </form>
+</div>
+        <button type="sumbit" >Crear</button>
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+</div>
 </body>
 </html>
