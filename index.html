@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-<!--Para el crear-->
-<div class="row w-75 m-auto">
-<div class="col-12 col-sm-3 container p-5">
-    <h4>Crea Archivo</h4>
-    <form action="http://localhost:3000/crear">
-        <div>
-            <label> Nombre Archivo:</label>
-            <input name ="nombreArchivo" id = "nombreArchivo">
-        </div>
-        <div>
-            <label> Crear Archivo:</label>
-            <textarea name ="contenido" id = "contenido" class = "form-control" cols></textarea>
-        </div>
-        <button type="sumbit">Crear</button>
-
-    </form>
-</div>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
-<!--Para Leer-->
-<div class "col-12 col-sm-3 container p-5">
-      <h4>Leer Archivo</h4>
-      <form action ="http://localhost:3000/leer">
-        <div class="form-group"´>
-            <label>Nombre Archivo a leer: </label>
-            <input name="nombreArchivo" id="nombreArchivo" class = "form-control">
+    </head>
+    <body>
+    <div class= "row w-75 m-auto">
+    <!--Para el crear-->
+    <div class="col-12 col-sm-3 container p-5">
+        <h4>Crea Archivo</h4>
+        <form action="http:localhost:3000/crear">
+            <div class= "form-group">
+                <label>Nombre Archivo</label>
+                <input name="nombreArchivo" id="nombreArchivo" class= "form-control">
+            <div class="form-group">
+                <label>Contenido Archivo</label>
+                <textarea name="contenido" id="contenido" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <button type = "submit" class="btn btn-primary">Crear</button>
         </div>
-        <button type="sumbit"class="btn btn-info">Leer</button>
     </form>
-</div>
-        <button type="sumbit" >Crear</button>
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-</div>
-</body>
+    </div>
+    <!--FIN crear-->
+    
+    <!--Para Leer-->
+    <div class="col-12 col-sm-3 container p-5">
+        <h4>Leer Archivo</h4>
+        <form action="http:localhost:3000/leer">
+            <div class="form-group">
+                <label>Nombre Archivo a leer</label>
+                <input name="nombreArchivo" id="nombreArchivo" class= "form-control">
+    
+            </div>
+            <button type = "submit" class="btn btn-info">Leer</button>
+        </form>
+        
+    </div>
+    
+    <!--Fin Leer-->
+    
+    <!--Para cambiar el nombre del archivo-->
+    <div class="col-12 col-sm-3 container p-5">
+        <h4>Cambiar nombre Archivo</h4>
+        <form action="http:localhost:3000/renombrar">
+            <div class="form-group">
+                <label>Nombre Archivo a cambiar</label>
+                <input name="nombreArchivo" id="nombreArchivo" class= "form-control">
+    
+            </div>
+            <div class="form-group">
+                <label>Nuevo nombre de archivo</label>
+                <input name="nuevoNombre" id="nuevoNombre" class= "form-control">
+    
+            </div>
+            <button type = "submit" class="btn btn-warning">Renombrar</button>
+        </form>
+        
+    </div>
+    <!--Fin para cambiar el nombre del archivo-->
+    
+    <!--Para el Eliminar-->
+    <div class="col-12 col-sm-3 container p-5">
+        <h4>Eliminar Archivo</h4>
+        <form action="http:localhost:3000/eliminar">
+            <div class="form-group">
+                <label>Nombre Archivo a Eliminar</label>
+                <input name="nombreArchivo" id="nombreArchivo" class= "form-control">
+    
+            </div>
+            <button type = "submit" class="btn btn-danger">Eliminar</button>
+        </form>
+        
+    </div>
+    <!--Fin de Eliminar-->
+    
+    </div>
+    
 </html>

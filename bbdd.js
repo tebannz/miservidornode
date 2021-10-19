@@ -14,12 +14,15 @@ console.log(cliente.connect())
 
 cliente.query('SELECT NOW', (err, res)=>{
     console.log(res)
-  
+    
     
 })
 
-cliente.query('SELECT * FROM prueba.persona;', (err, res) => {
+cliente.query('SELECT * FROM public.persona;', (err, res) => {
     if (err) throw err
     console.log(res);
     cliente.end();
-});
+}
+
+);
+
